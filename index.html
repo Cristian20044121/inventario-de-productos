@@ -4,11 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Inventario</title>
 </head>
 <body>
-    <h1>HOMES</h1>
-    <a href="categoria.html">categoria</a>
     
+    <div class="menu">
+        <h1>INVENTARIO DE PRODUCTOS</h1>
+        <div class="photo">
+        </div>
+        <span>USER789</span>
+    </div>
+
+    <div class="menu-burguer">
+        <a href="">INICIO</a>
+        <a href="">HOME</a>
+
+        <div class="line"></div>
+
+        <a href="">INICIO</a>
+        <a href="">PRODUCTOS</a>
+        <a href="">CATEGORIAS</a>
+        <a href="">ACCESO</a>
+        <a href="">CONGIGURACIÓN</a>   
+    </div>
+
+    <div class="table">
+        <p class="inventary">INVENTARIO DE PRODUCTOS</p>
+        <h2>PRODUCTOS</h2>
+        <div class="space-button">
+            <div class="button">
+                <button>AGREGAR PRODUCTO</button>
+            </div>
+            <div class="search">
+                <label for="search">BUSCAR:</label>
+                <input type="search" name="search" id="search">
+            </div>
+        </div>
+
+
+        <!-- formulario agregar producto  -->
+        <section class="form">
+
+            <div class="title">
+            <h3>DETALLES DEL PRODUCTO</h3>
+            <div class="close">X</div>
+            </div>
+    
+            <label for="provider">PROVEDOR</label>  
+            <input type="text" id="provider" name="provider">
+    
+            <div class="flex">
+                <label for="id-product">ID PRODUCTO</label>
+                <input type="text" id="id-product" name="id-product">
+    
+                <label for="name-product">NOMBRE PRODUCTO</label>
+                <input type="text" id="name-product" name="name-product">
+    
+                <label for="category">CATEGORIA</label>
+                <input type="text" id="category" name="category">
+        
+            </div>
+    
+            <label for="description">DESCRIPCION</label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+    
+            <div class="flex">
+                <label for="price">PRECIO</label>
+                <input type="number" id="price" name="price">    
+    
+                <label for="stock">STOCK</label>
+                <input type="number" id="stock" name="stock">
+    
+                <label for="store">ALMACEN</label>
+                <input type="text" id="store" name="store">
+    
+            </div>
+             
+            <div class="flex">
+            <button class="add btn btn-primary" onclick="addProduct()">AGREGAR</button>
+            <button class="delete btn btn-danger">BORRAR</button>
+            </div>
+    
+    
+    
+        </section>
+
+
+
+
+
+        <table>   
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>NOMBRE</td>
+                    <td>PRECIO</td>
+                    <td>CATEGORIA</td>
+                    <td>DESCRIPTION</td>
+                    <td>STOCK</td>
+                    <td>ALMACEN</td>
+                    <td>PROVEDOR</td>
+                    <td>EDITAR</td>
+                    <td>BORRAR</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1526749</td>
+                    <td>Pc</td>
+                    <td>$199.000</td>
+                    <td>Tecnología</td>
+                    <td>cualquier cosa</td>
+                    <td>4</td>
+                    <td>cualquier cosa</td>
+                    <td>cristian</td>
+                    <td><button class="btn btn-primary">Edit</button></td>
+                    <td><button class="btn btn-danger">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <!-- <a href="categoria.html">categoria</a> -->
+    <script type="text/javascript">
+    </script>
+
+    <script src="js/index.js"></script>
+</body>   
 </body>
 </html>
